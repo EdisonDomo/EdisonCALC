@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculator">
+
+        <input type="text" placeholder="0" class="display" disabled id="display">
+            <div class="buttons">
+                <table>
+                    <tr>
+                        <th><button type="button" class="btn-color" value="AC" onclick="clearDisplay()">C</button></th>
+                        <th><button type="button"  class="btn-color" value="/" onclick="appendToDisplay('/')">/</button></th>
+                        <th><button type="button"  class="btn-color" value="*" onclick="appendToDisplay('*')">*</button></th>
+                        <th><button type="button"  class="btn-color" value="DE" onclick="backSpace()">DEL</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" value="7" onclick="appendToDisplay('7')">7</button></th>
+                        <th><button type="button" value="8" onclick="appendToDisplay('8')">8</button></th>
+                        <th><button type="button" value="9" onclick="appendToDisplay('9')">9</button></th>
+                        <th><button type="button"  class="btn-color" value="+" onclick="appendToDisplay('+')">+</button></th>
+                    </tr>
+                    <tr>
+                        <th class="center"><button type="button" value="4" onclick="appendToDisplay('4')">4</button></th>
+                        <th><button type="button" value="5" onclick="appendToDisplay('5')">5</button></th>
+                        <th><button type="button" value="6" onclick="appendToDisplay('6')">6</button></th>
+                        <th><button type="button"  class="btn-color" value="-" onclick="appendToDisplay('-')">-</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" value="1" onclick="appendToDisplay('1')">1</button></th>
+                        <th><button type="button" value="2" onclick="appendToDisplay('2')">2</button></th>
+                        <th><button type="button" value="3" onclick="appendToDisplay('3')">3</button></th>
+                        <th> <button type="button"  class="btn-color" value="%"  onclick="appendToDisplay('%')">%</button></th>
+                    </tr>
+                    <tr>
+                        <th><button type="button" value="00" onclick="appendToDisplay('00')">00</button></th>
+                        <th><button type="button" value="0" onclick="appendToDisplay('0')">0</button></th>
+                        <th><button type="button" value="." onclick="appendToDisplay('.')">.</button></th>
+                        <th > <button type="button" value="=" class="equal" onclick="calculate()">=</button></th>
+                    </tr>
+                </table>
+            </div>
+    
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
